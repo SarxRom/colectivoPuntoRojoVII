@@ -1,14 +1,74 @@
-body{
-    background-color: #f3f0f0;
+*{
+    color: #000000;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+.derecha{
+    background-color: rgb(107, 206, 255); 
+    font-size: 50px;
+    padding: 10px;
+    float: left;
+    height: 1500px; 
+    width: 15%;
+    text-align: center;
+}
+.centro{
+    background-color: #FFFFFF; 
+    font-size: 50px; 
+    padding: 10px;
+    float: left; 
+    height: 800px; 
+    width: 60%;
 }
 
-h1{
-    color: #d78d8d;
-    font-family: "Times New Roman", Times, serif, cursive;
-    font-size: 78px;
+.contenido-centro1{
+    margin-top: 20px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    text-align: left;
+    font-size: 30px;
+    border: 2px dashed rgba(107, 206, 255, 0.8);
+    border-radius: 12px;
+    padding: 25px;
+    border-style: dashed;
 }
-h2{
-    color: #000000;
-    font-family: 'Times new roman';
-    font-size: 18px;
+.contenido-centro2{
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 30px;
+    border: 2px solid rgb(88, 169, 210);
+    border-radius: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    border-style: solid;
 }
+
+.izquierda{
+    background-color: rgb(107, 206, 255); 
+    font-size: 50px; 
+    padding: 10px; 
+    float: left; 
+    height: 1500px; 
+    width: 25%;
+    text-align: center;
+}
+@media screen and (max-Width:800px){
+    .izquierda, .centro, .derecha{
+        width: 100%;
+    }
+}
+
+.titulo{
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/*(fl + enter) para colocar el float */
