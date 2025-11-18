@@ -1,24 +1,58 @@
-body{
-    font-family:'Courier New', Courier, monospace;
-    background-color: rgb(0, 0, 0);
-    align-items: center;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #ffffff;
 }
 
-h1{
-    font-size: 40px;
+/* Contenedor central */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
     text-align: center;
-    color: rgb(255, 255, 255);
 }
 
-h2{
-    font-size: 25px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+/* Título responsivo */
+h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);  /* escala con la pantalla */
+    color: #000;
 }
 
-p{
-    font-size: 20px;
-    text-align: center;
-    color: rgb(255, 255, 255);
+/* Botón */
+.btn {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 15px 32px;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.3s ease;
+}
+
+/* Efecto hover */
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #00e600;
+}
+
+/* Responsividad extra para celulares pequeños */
+@media (max-width: 500px) {
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
 }

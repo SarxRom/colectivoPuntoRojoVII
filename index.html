@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Me borro, luego existo</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon/me_borro.ico">
     <link rel="stylesheet" href="styleIndex.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon/me_borro.ico">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
 
-    <div>
-    <h1>meBorroLuegoExisto.com</h1>
-    </div>
-    <div>
-        <button style="background-color: rgb(0, 255, 0); color: rgb(0, 0, 0); border: none; padding: 15px 32px; text-align: center; text-decoration: none; font-weight: bold; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px; font-family:'Courier New', Courier, monospace; flex-direction: column; align-items: center;" onclick="perfilCompu()">
-            Ingresar
-        </button>
+    <div class="container">
+        <h1>meBorroLuegoExisto.com</h1>
+        <h2>¡Te doy la bienvenida al foro, colega!</h2>
+        <h4>Crea un nombre para que te reconozcan</h4>
+        <input type="text" id="apodo">
+        <button class="btn" type="button" onclick="registroUsuario(document.getElementById('apodo').value)">Ingresar</button>
     </div>
 
     <script src="scriptIndex.js"></script>
