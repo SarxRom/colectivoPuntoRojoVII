@@ -143,6 +143,8 @@
 
     #typewriter-text {
         white-space: pre-wrap;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
     }
 
     #typewriter-cursor {

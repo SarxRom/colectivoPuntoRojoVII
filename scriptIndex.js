@@ -5,14 +5,15 @@
         });
 
     async function registroUsuario(nickname) {
-            const nombreUsuario = await namuClient.from('pruebaRegistros').insert([
+            const nombreUsuario = await namuClient.from('usuariosRegistros').insert([
                 {usuarios: nickname},
             ]).select()
         }
         registroUsuario();
 
 // Loader de entrada
-// NO IDENTAR; EL FORMATO DE LAS FRSES SE DESALINEA
+// NO IDENTAR; EL FORMATO YA ESTÁ BIEN
+// INVESTIGAR CÓMO HACER QUE EL CURSOR INICIE CADA FRASE DESDE EL INICIO DE LA LÍNEA
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -40,7 +41,7 @@ Iniciando...`;
                         typewriter.textContent += text[index];
                         index++;
 
-                        const speed = 40 + Math.random() * 80; // realista
+                        const speed = 40 + Math.random() * 80; // Velocidad variable
                         setTimeout(type, speed);
 
                     } else {
