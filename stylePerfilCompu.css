@@ -1,6 +1,14 @@
 body{
     font-family:'Courier New', Courier, monospace;
-    background-image: url(assets/fondos/fondoPropuesta1.jpg);
+    background-color: black;
+}
+
+/* Conecta el canvas de p5 con el body y el html (al fin ya quedó TuT) */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .titulo{
@@ -18,14 +26,15 @@ body{
 }
 
 .centro{
-    background-color: rgba(255, 255, 255, 0.8); 
-    font-size: 50px; 
+    font-size: 50px;
+    color: aliceblue;
     padding: 10px; 
     float: right; 
     height: 1500px; 
     width: 73%;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 20px;
+    border-color: rgb(0, 255, 0);
 }
 
 .izquierda{
