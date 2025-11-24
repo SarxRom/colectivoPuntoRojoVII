@@ -1,16 +1,17 @@
-
-
 // cuando se presionen las teclas de la primera línea del teclado 
 // q, w, e, r, t, y, u, i, o, p
 // aparecerán alertas con mensajes suicidas.
 // las alertas aparecerán en una posición aleatoria dentro del canvas
 
+// CAMBIAR POR UN TIMER EL KEYPRESSED
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  clear(); // permite transparencia real
 }
 
 function draw() {
-  // Nada en draw
+
 }
 
 // Aparición de frases suicidas con formato (súper simple) de alertas
