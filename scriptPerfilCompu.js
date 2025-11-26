@@ -25,17 +25,14 @@
         });
 
         (async () => {
-            const response = await namuClient.from("prueba2").select("felizzzz")
-            console.log(response.data[0].felizzzz)
+            const response = await namuClient.from("frasesFinales").select("capitulo1")
+            console.log(response.data[0].capitulo1)
                 
-            document.getElementById("fraseFeli0").innerHTML = response.data[0].felizzzz;
-            document.getElementById("fraseFeli1").innerHTML = response.data[1].felizzzz;
-            document.getElementById("fraseFeli2").innerHTML = response.data[2].felizzzz;
-            document.getElementById("fraseFeli3").innerHTML = response.data[3].felizzzz;
-            document.getElementById("fraseFeli4").innerHTML = response.data[4].felizzzz;
-            document.getElementById("fraseFeli5").innerHTML = response.data[5].felizzzz;
-            document.getElementById("fraseFeli6").innerHTML = response.data[6].felizzzz;
-            document.getElementById("fraseFeli7").innerHTML = response.data[7].felizzzz;
+            document.getElementById("fraseFeli0").innerHTML = response.data[0].capitulo1;
+            document.getElementById("fraseFeli1").innerHTML = response.data[1].capitulo1;
+            document.getElementById("fraseFeli2").innerHTML = response.data[2].capitulo1;
+            document.getElementById("fraseFeli3").innerHTML = response.data[3].capitulo1;
+            document.getElementById("fraseFeli4").innerHTML = response.data[4].capitulo1;
         })()
 
 // testing timer with js
