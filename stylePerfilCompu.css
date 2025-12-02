@@ -30,7 +30,7 @@ canvas {
     color: aliceblue;
     padding: 10px; 
     float: right; 
-    height: 1500px; 
+    height: 1580px; 
     width: 78%;
     text-align: center;
     border-radius: 20px;
@@ -43,7 +43,7 @@ canvas {
     font-weight: bold;
     padding-left: 20px; 
     float: left; 
-    height: 1520px; 
+    height: 1600px; 
     width: 18%;
     text-align: left;
     border-radius: 15px;
@@ -76,9 +76,41 @@ canvas {
     padding-right: 20px;
     padding-bottom: 15px;
     padding-top: 20px;
-    border-style: solid;
     background-color: #ffffff;
+    color: #000000;
 }
+
+ input {
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+        border-radius: 15px;
+        width: 800px;
+        border-color: #bfbfbf;
+        border-style:groove;
+    }
+
+/* Botón */
+
+    .btn {
+        background-color: #00ff00;
+        color: #000000;
+        border: none;
+        padding: 1px 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.3s ease;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+/* Efecto hover */
+
+    .btn:hover {
+        transform: scale(1.05);
+        background-color: #00ff00;
+    }
 
 h3{
     font-size: 25px;

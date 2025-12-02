@@ -26,7 +26,7 @@ const namuClient = supabase.createClient('https://geeatbnsxnjicdfdcjvr.supabase.
             console.log(response.data[0].cap1)
                 
             document.getElementById("fraseFeli0").innerHTML = response.data[0].cap1;
-            // document.getElementById("fraseFeli1").innerHTML = response.data[1].cap1;
+            document.getElementById("fraseFeli1").innerHTML = response.data[1].cap1;
             document.getElementById("fraseFeli2").innerHTML = response.data[2].cap1;
             document.getElementById("fraseFeli3").innerHTML = response.data[3].cap1;
             document.getElementById("fraseFeli4").innerHTML = response.data[4].cap1;

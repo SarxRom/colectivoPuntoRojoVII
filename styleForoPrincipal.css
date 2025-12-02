@@ -1,5 +1,6 @@
 body{
     background-color: #000000;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .espacios {
@@ -9,7 +10,7 @@ body{
     'menu header right'
     'menu main right'; 
   overflow: hidden;
-  padding: 10px;
+  /* padding: 10px; */
   gap: 10px;
 }
 
@@ -34,7 +35,7 @@ body{
   color: #000000;
   background-color: #00ff00;
   border-radius: 15px;
-  height: 1500px;
+  height: 1300px;
 }
 
 .publi {
@@ -46,7 +47,8 @@ body{
   overflow-x: hidden;
   scrollbar-width: none;
   border-radius: 15px;
-  height: 1430px;
+  height: 1230px;
+  font-family:'Courier New', Courier, monospace;
 }
 
 .publi::-webkit-scrollbar {
@@ -68,8 +70,41 @@ body{
   display: flex; 
   gap: 10px;
   text-align: center;
+  font-family:'Courier New', Courier, monospace;
 }
 
+ input {
+        padding: 10px;
+        font-size: 1rem;
+        margin-top: 10px;
+        border-radius: 15px;
+        height: 150px;
+        width: 200px;
+        border-color: #bfbfbf;
+        border-style:groove;
+    }
+
+/* Botón */
+
+    .btn {
+        background-color: #00ff00;
+        color: #000;
+        border: none;
+        padding: 4px 10px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform 0.15s ease, background 0.3s ease;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    /* Efecto hover */
+
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #00ff00;
+        }
 
 .menu {
   grid-area: right;
@@ -77,7 +112,7 @@ body{
   color: #000000;
   background-color: #00ff00;
   border-radius: 15px;
-  height: 1500px;
+  height: 1300px;
 }
 
 .iconmenu{
@@ -90,7 +125,7 @@ body{
 .textIconos{
   float: right;
   align-items: left;
-  padding-right: 50%;
+  padding-right: 10%;
 }
 
 .notificacion {
