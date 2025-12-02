@@ -10,7 +10,6 @@ body{
     'menu header right'
     'menu main right'; 
   overflow: hidden;
-  /* padding: 10px; */
   gap: 10px;
 }
 
@@ -56,6 +55,27 @@ body{
   text-align: center;
 }
 
+@keyframes aparecer {
+    from { opacity: 0;}
+    to { opacity: 1; }
+}
+
+  #frase1 {
+    animation: aparecer 5s ease;
+  }
+
+  #frase2 {
+    animation: aparecer 10s ease;
+  }
+
+  #frase3 {
+    animation: aparecer 15s ease;
+  }
+
+  #frase4 {
+    animation: aparecer 20s ease;
+  }
+
 .contenido-centro2{ 
   margin-top: 25px; 
   margin-left: 40px; 
@@ -73,38 +93,39 @@ body{
   font-family:'Courier New', Courier, monospace;
 }
 
- input {
-        padding: 10px;
-        font-size: 1rem;
-        margin-top: 10px;
-        border-radius: 15px;
-        height: 150px;
-        width: 200px;
-        border-color: #bfbfbf;
-        border-style:groove;
-    }
+input {
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 15px;
+  height: 150px;
+  width: 200px;
+  border-color: #bfbfbf;
+  border-style:groove;
+  background-color: #ffffff;
+}
 
 /* Botón */
 
-    .btn {
-        background-color: #00ff00;
-        color: #000;
-        border: none;
-        padding: 4px 10px;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 10px;
-        cursor: pointer;
-        transition: transform 0.15s ease, background 0.3s ease;
-        font-family:'Courier New', Courier, monospace;
+  .btn {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 4px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.3s ease;
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  /* Efecto hover */
+
+    .btn:hover {
+      transform: scale(1.05);
+      background-color: #00ff00;
     }
-
-    /* Efecto hover */
-
-        .btn:hover {
-            transform: scale(1.05);
-            background-color: #00ff00;
-        }
 
 .menu {
   grid-area: right;
@@ -128,18 +149,23 @@ body{
   padding-right: 10%;
 }
 
+@keyframes aparecer1 {
+    from { transform: 20px;}
+    to { transform: 0px; }
+}
+
 .notificacion {
   width: 330px;
   background: #000000;
   padding: 15px;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 12px rgb(0,0,0);
   border-radius: 10px;
   position: fixed;
   bottom: 20px;
   right: 20px;
   display: flex;
   gap: 10px;
-  animation: aparecer 0.3s ease;
+  animation: aparecer1 30s ease;
 }
 
 .oculto {
@@ -191,9 +217,4 @@ body{
 .rechazar {
     background: #00ff00;
     color: #000000;
-}
-
-@keyframes aparecer {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
