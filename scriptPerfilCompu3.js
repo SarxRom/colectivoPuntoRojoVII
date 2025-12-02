@@ -28,8 +28,8 @@
             const response3 = await namuClient.from("finalFrasesPost").select("cap3")
             console.log(response3.data[0].cap3)
                 
-            document.getElementById("fraseFeli10").innerHTML = response3.data[0].cap3;
-            document.getElementById("fraseFeli11").innerHTML = response3.data[1].cap3;
-            document.getElementById("fraseFeli12").innerHTML = response3.data[2].cap3;
-            document.getElementById("fraseFeli13").innerHTML = response3.data[3].cap3;
+            document.getElementById("fraseFeli0").innerHTML = response3.data[0].cap3;
+            document.getElementById("fraseFeli1").innerHTML = response3.data[1].cap3;
+            document.getElementById("fraseFeli2").innerHTML = response3.data[2].cap3;
+            document.getElementById("fraseFeli3").innerHTML = response3.data[3].cap3;
         })()

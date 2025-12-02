@@ -25,24 +25,13 @@
         });
 
         (async () => {
-            const response = await namuClient.from("finalFrasesPost").select("cap1")
-            console.log(response.data[0].cap1)
+            const response = await namuClient.from("finalFrasesPost").select("cap4")
+            console.log(response.data[0].cap4)
                 
-            document.getElementById("fraseFeli0").innerHTML = response.data[0].cap1;
-            document.getElementById("fraseFeli1").innerHTML = response.data[1].cap1;
-            document.getElementById("fraseFeli2").innerHTML = response.data[2].cap1;
-            document.getElementById("fraseFeli3").innerHTML = response.data[3].cap1;
-            document.getElementById("fraseFeli4").innerHTML = response.data[4].cap1;
+            document.getElementById("fraseFeli0").innerHTML = response.data[0].cap4;
+            document.getElementById("fraseFeli1").innerHTML = response.data[1].cap4;
+            document.getElementById("fraseFeli2").innerHTML = response.data[2].cap4;
+            document.getElementById("fraseFeli3").innerHTML = response.data[3].cap4;
+            document.getElementById("fraseFeli4").innerHTML = response.data[4].cap4;
 
-        })()
-
-        (async () => {
-            const response2 = await namuClient.from("finalFrasesPost").select("cap2")
-            console.log(response2.data[0].cap2)
-                
-            document.getElementById("fraseFeli5").innerHTML = response2.data[0].cap2;
-            document.getElementById("fraseFeli6").innerHTML = response2.data[1].cap2;
-            document.getElementById("fraseFeli7").innerHTML = response2.data[2].cap2;
-            document.getElementById("fraseFeli8").innerHTML = response2.data[3].cap2;
-            document.getElementById("fraseFeli9").innerHTML = response2.data[4].cap2;
         })()
