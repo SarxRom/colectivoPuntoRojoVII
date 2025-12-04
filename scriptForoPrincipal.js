@@ -31,10 +31,109 @@
             document.getElementById("fraseFeli12").innerHTML = response3.data[2].cap3;
             document.getElementById("fraseFeli13").innerHTML = response3.data[3].cap3;
         })()
-// Respuestas de los usuarios
-        async function respuestaUsuario(res) {
-            const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
-                {respuesta: res},
-            ]).select()
-        }
-        respuestaUsuario();
+
+// Loader para pantallazo negro 1
+    // NO IDENTAR; EL FORMATO YA ESTÁ BIEN
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+                const text = 
+    `Solamente lo pensaba...`;
+
+                let index = 0;
+                const screen = document.getElementById("typewriter-screen1");
+                const typewriter = document.getElementById("typewriter-text1");
+
+                // Espera a que termine el loader (2.5s)
+                setTimeout(() => {
+
+                    // Mostrar pantalla de máquina de escribir
+                    screen.style.display = "flex";
+                    setTimeout(() => screen.style.opacity = 1);
+
+                    function type() {
+                        if (index < text.length) {
+                            typewriter.textContent += text[index];
+                            index++;
+
+                            const speed = 50 + Math.random() * 80; // Velocidad variable
+                            setTimeout(type, speed);
+
+                        } else {
+                            // DESVANECER Y MOSTRAR CONTENIDO REAL
+                            // SI LO QUITO EL LOADER NO SE QUITA
+                            setTimeout(() => {
+                                screen.style.opacity = 1;
+
+                                setTimeout(() => {
+                                    screen.style.display = "none";
+                                    document.querySelector(".container1").style.display = "flex";
+                                    document.body.style.overflow = "auto";
+                                }, 600);
+
+                            }, 500);
+                        }
+                    }
+
+                    type();
+
+                }, 2500);
+            });
+
+// Loader para pantallazo negro 2
+    // NO IDENTAR; EL FORMATO YA ESTÁ BIEN
+
+    setTimeout(() => {
+    document.addEventListener("DOMContentLoaded", () => {
+
+                const text = 
+    `Pero ese pensamiento era... recurrente...`;
+
+                let index = 0;
+                const screen = document.getElementById("typewriter-screen1");
+                const typewriter = document.getElementById("typewriter-text1");
+
+                // Espera a que termine el loader (2.5s)
+                setTimeout(() => {
+
+                    // Mostrar pantalla de máquina de escribir
+                    screen.style.display = "flex";
+                    setTimeout(() => screen.style.opacity = 1);
+
+                    function type() {
+                        if (index < text.length) {
+                            typewriter.textContent += text[index];
+                            index++;
+
+                            const speed = 50 + Math.random() * 80; // Velocidad variable
+                            setTimeout(type, speed);
+
+                        } else {
+                            // DESVANECER Y MOSTRAR CONTENIDO REAL
+                            // SI LO QUITO EL LOADER NO SE QUITA
+                            setTimeout(() => {
+                                screen.style.opacity = 1;
+
+                                setTimeout(() => {
+                                    screen.style.display = "none";
+                                    document.querySelector(".container2").style.display = "flex";
+                                    document.body.style.overflow = "auto";
+                                }, 600);
+
+                            }, 500);
+                        }
+                    }
+
+                    type();
+
+                }, 2500);
+            });
+    }, 6000);
+
+// // Respuestas de los usuarios
+//         async function respuestaUsuario(res) {
+//             const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
+//                 {respuesta: res},
+//             ]).select()
+//         }
+//         respuestaUsuario();
