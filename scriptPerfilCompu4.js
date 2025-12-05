@@ -35,3 +35,10 @@
             document.getElementById("fraseFeli4").innerHTML = response.data[4].cap4;
 
         })()
+        
+        async function respuestaUsuario(res) {
+             const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
+                 {respuestas: res},
+             ]).select()
+         }
+         respuestaUsuario();
