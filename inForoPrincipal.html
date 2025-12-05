@@ -12,7 +12,6 @@
     <div class="espacios">
             <div class="titulo">
                 <header>
-                    <img src="" alt="">
                     <b>meBorroLuegoExisto.com</b>
                 </header>
             </div>
@@ -20,11 +19,19 @@
         <!-- PERFIL DEL USUARIO -->
             <div class="perfil">
                 <h3>@148.0.16.254</h3>
-                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="fotoDePerfilCompu" width="150" height="150">
-                <p>Edad: ...</p>
-                <p>Publicaciones (5)</p>
-                <p>Fotos</p>
-                <img src="assets/fotostom/primer_toma1.jpg" alt="fotostom" width="180" height="140">
+                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="fotoDePerfilCompu" width="150" height="150" style="border-radius: 50%">
+                <p>Edad: n</p>
+                <p>Publicaciones (n)</p>
+                <p>Fotos (5)</p>
+                <img src="assets/fotos/p1.jpg" alt="fotoCompu1" width="350" height="160" style="border-radius: 15px;">
+                <br>
+                <img src="assets/fotos/p2.jpg" alt="fotoCompu2" width="350" height="160" style="border-radius: 15px;">
+                <br>
+                <img src="assets/fotos/p3.jpg" alt="fotoCompu3" width="350" height="160" style="border-radius: 15px;">
+                <br>
+                <img src="assets/fotos/p4.jpg" alt="fotoCompu4" width="350" height="160" style="border-radius: 15px;">
+                <br>
+                <img src="assets/fotos/p5.jpg" alt="fotoCompu5" width="350" height="160" style="border-radius: 15px;">
             </div>
 
         <!-- PUBLICACIONES -->
@@ -38,71 +45,73 @@
                 
                 <!-- FRASES CAP 1 -->
                     <!-- FRASE0 (FIJADA) -->
-                    <div class="contenido-centro2"> 
-                        <div> 
-                            <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
-                            <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
-                            <p style="font-size: 10px; display: flex; text-align: left; font-size: 15px;"><i>Fijado</i></p>
-                        </div> 
-                        <p style="color: black;" id="fraseFeli0"></p>
-                        <div>
-                            <input type="text" id="respuesta1">
-                            <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta1').value)">Responder</button>
+                        <div class="contenido-centro2"> 
+                            <div> 
+                                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
+                                <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
+                                <p style="font-size: 10px; display: flex; text-align: left; font-size: 15px;"><i>Fijado</i></p>
+                            </div> 
+                            <p style="color: black;" id="fraseFeli0"></p>
+                            <div>
+                                <input type="text" id="respuesta1">
+                                <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta1').value)">Responder</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- FRASE1 -->
-                    <div id="frase1" class="contenido-centro2"> 
-                        <div> 
-                            <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
-                            <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
-                        </div> 
-                        <p style="color: black;" id="fraseFeli1"></p>
-                        <div>
-                            <input type="text" id="respuesta1">
-                            <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta1').value);">Responder</button>
+                        <!-- FRASE1 -->
+                        <div id="frase1" class="contenido-centro2"> 
+                            <div> 
+                                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
+                                <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
+                            </div> 
+                            <p style="color: black;" id="fraseFeli1"></p>
+                            <div>
+                                <input type="text" id="respuesta1">
+                                <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta1').value);">Responder</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- FRASE2 -->
-                    <div id="frase2" class="contenido-centro2"> 
-                        <div> 
-                            <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
-                            <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
-                        </div> 
-                        <p style="color: black;" id="fraseFeli2"></p>
-                        <div>
-                            <input type="text" id="respuesta2">
-                            <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta2').value);">Responder</button>
+                        <!-- FRASE2 -->
+                        <div id="frase2" class="contenido-centro2"> 
+                            <div> 
+                                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
+                                <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
+                            </div> 
+                            <p style="color: black;" id="fraseFeli2"></p>
+                            <div>
+                                <input type="text" id="respuesta2">
+                                <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta2').value);">Responder</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- FRASE3 -->
-                    <div id="frase3" class="contenido-centro2"> 
-                        <div> 
-                            <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
-                            <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
-                        </div> 
-                        <p style="color: black;" id="fraseFeli3"></p>
-                        <div>
-                            <input type="text" id="respuesta3">
-                            <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta3').value);">Responder</button>
+                        <!-- FRASE3 -->
+                        <div id="frase3" class="contenido-centro2"> 
+                            <div> 
+                                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
+                                <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
+                            </div> 
+                            <p style="color: black;" id="fraseFeli3"></p>
+                            <div>
+                                <input type="text" id="respuesta3">
+                                <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta3').value);">Responder</button>
+                            </div>
                         </div>
-                    </div>
-                    <!-- FRASE4 -->
-                    <div id="frase4" class="contenido-centro2"> 
-                        <div> 
-                            <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
-                            <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
-                        </div> 
-                        <p style="color: black;" id="fraseFeli4"></p>
-                        <div>
-                            <input type="text" id="respuesta4">
-                            <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta4').value);">Responder</button>
+                        <!-- FRASE4 -->
+                        <div id="frase4" class="contenido-centro2"> 
+                            <div> 
+                                <img src="assets/fotoPerfil/fotoDePerfilCompu.jpg" alt="foto de perfil" width="55px" style="border-radius: 50%; display: flex;"> 
+                                <p id="usuarioCompu" style="font-size: 12px; display: flex; text-align: left;"><strong>@148.0.16.254</strong></p>
+                            </div> 
+                            <p style="color: black;" id="fraseFeli4"></p>
+                            <div>
+                                <input type="text" id="respuesta4">
+                                <button class="btn" type="button" onclick="respuestaUsuario(document.getElementById('respuesta4').value);">Responder</button>
+                            </div>
                         </div>
-                    </div>
 
-                <!-- PANTALLAZO NEGRO 1 -->
-                <!-- EFECTO MÁQUINA DE ESCRIBIR -->
-                        <div id="typewriter-screen1">
-                            <div id="typewriter-text1"></div><span id="typewriter-cursor1"></span>
+                <!-- LOADER -->
+                    <div id="loader"></div>
+
+                    <!-- EFECTO MÁQUINA DE ESCRIBIR -->
+                        <div id="typewriter-screen">
+                            <div id="typewriter-text"></div><span id="typewriter-cursor"></span>
                         </div>
 
                 <!-- FRASES CAP 2 -->
@@ -169,9 +178,12 @@
                 
                 <!-- PANTALLAZO NEGRO 2 -->
                 <!-- EFECTO MÁQUINA DE ESCRIBIR -->
+                    <div class="container2">
                         <div id="typewriter-screen2">
-                            <div id="typewriter-text2"></div><span id="typewriter-cursor2"></span>
+                            <div id="typewriter-text2"></div>
                         </div>
+                    </div>
+
 
                 <!-- FRASES CAP 3 -->
                 <div>
@@ -248,7 +260,7 @@
                     <br>
                     <p style="padding-right: 5%;"><b>Notificaciones</b></p>
                     <br>
-                    <p style="padding-right: 100%; padding-top: 6%;"><b>Tendencias</b></p>
+                    <p style="padding-right: 50%; padding-top: 6%;"><b>Tendencias</b></p>
                     <br>
                     <p style="padding-right: 50%;"><b>Configuración</b></p>
                     <br>
