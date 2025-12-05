@@ -131,9 +131,9 @@
     }, 6000);
 
 // // Respuestas de los usuarios
-//         async function respuestaUsuario(res) {
-//             const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
-//                 {respuesta: res},
-//             ]).select()
-//         }
-//         respuestaUsuario();
+         async function respuestaUsuario(res) {
+             const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
+                 {respuestas: res},
+             ]).select()
+         }
+         respuestaUsuario();
