@@ -34,19 +34,11 @@
             document.getElementById("fraseFeli3").innerHTML = response.data[3].cap4;
             document.getElementById("fraseFeli4").innerHTML = response.data[4].cap4;
 
-            const response2 = await namuClient.from("finalFrasesPost").select("cap4")
-            console.log(response2.data[0].cap4)
-                
-            document.getElementById("fraseFeli0").innerHTML = response2.data[0].cap4;
-            document.getElementById("fraseFeli1").innerHTML = response2.data[1].cap4;
-            document.getElementById("fraseFeli2").innerHTML = response2.data[2].cap4;
-            document.getElementById("fraseFeli3").innerHTML = response2.data[3].cap4;
-            document.getElementById("fraseFeli4").innerHTML = response2.data[4].cap4;
         })()
         
         async function respuestaUsuario(res) {
-            const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
-                {respuestas: res},
-            ]).select()
-        }
-        respuestaUsuario();
+             const respondemewe = await namuClient.from('frasesFinalesUsuarios').insert([
+                 {respuestas: res},
+             ]).select()
+         }
+         respuestaUsuario();
