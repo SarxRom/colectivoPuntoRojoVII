@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Varios loaders</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    .loader {
+      display: none; /* Oculto por defecto */
+      margin: 20px auto;
+      width: 60px;
+      height: 60px;
+      border: 6px solid #333;
+      border-top: 6px solid #09f;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Secuencia de Loaders</h1>
+
+  <div id="loader1" class="loader"></div>
+  <div id="loader2" class="loader"></div>
+  <div id="loader3" class="loader"></div>
+
+  <script>
+    // Loader 1 aparece a los 0.5s
+    setTimeout(() => {
+      document.getElementById("loader1").style.display = "block";
+    }, 5000);
+
+    // Loader 1 desaparece a los 2s
+    setTimeout(() => {
+      document.getElementById("loader1").style.display = "none";
+    }, 6000);
+
+    // Loader 2 aparece a los 2s
+    setTimeout(() => {
+      document.getElementById("loader2").style.display = "block";
+    }, 8000);
+
+    // Loader 2 desaparece a los 4s
+    setTimeout(() => {
+      document.getElementById("loader2").style.display = "none";
+    }, 9000);
+
+    // Loader 3 aparece a los 4s
+    setTimeout(() => {
+      document.getElementById("loader3").style.display = "block";
+    }, 11000);
+
+    // Loader 3 desaparece a los 6s
+    setTimeout(() => {
+      document.getElementById("loader3").style.display = "none";
+    }, 12000);
+  </script>
+
+</body>
+</html>
