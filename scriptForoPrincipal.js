@@ -71,7 +71,7 @@
       const t1 = document.getElementById("loader1-text");
       l1.style.display = "flex";
 
-      escribirTexto(t1, "Creo que es solamenten un pensamiento...", 30);
+      escribirTexto(t1, "Creo que es solamente un pensamiento...", 30);
     }, 10000);
 
     setTimeout(() => {
@@ -97,7 +97,7 @@
       const t3 = document.getElementById("loader3-text");
       l3.style.display = "flex";
 
-      escribirTexto(t3, "No me necsitas; no soy suficiente...", 60);
+      escribirTexto(t3, "No me necesitas; no soy suficiente...", 60);
     }, 27000);
 
     setTimeout(() => {
