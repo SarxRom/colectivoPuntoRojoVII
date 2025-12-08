@@ -40,5 +40,66 @@
         }
         respuestaUsuario();
 
-// Loaders para pantallazos negros
+// Loaders para pantallazos negros entre capitulos
 
+    // FUNCIÓN: efecto máquina de escribir
+    // Se definen todas las cosas que leerá la función para el efceto
+    function escribirTexto(elemento, texto, velocidad = 2000, callback = null) {
+      elemento.textContent = "";
+      // variable que indica el índice en el que se empieza
+      // a escribir la frase del loader. En este caso,
+      // comienza en el índice 0, o sea, la primer letra de
+      // cada frase en cada loader
+      let i = 0;
+
+      function escribir() {
+        if (i < texto.length) {
+          elemento.textContent += texto[i];
+          i++;
+          setTimeout(escribir, velocidad + Math.random() * 100);
+        } else {
+          if (callback) callback();
+        }
+      }
+
+      escribir();
+    }
+
+    // LOADER 3: PANTALLAZO NEGRO 3 = CAP 2 A CAP 3
+    setTimeout(() => {
+      const l1 = document.getElementById("loader1");
+      const t1 = document.getElementById("loader1-text");
+      l1.style.display = "flex";
+
+      escribirTexto(t1, "Creo que es solamenten un pensamiento...", 30);
+    }, 10000);
+
+    setTimeout(() => {
+      document.getElementById("loader1").style.display = "none";
+    }, 15000);
+
+    // LOADER 3: PANTALLAZO NEGRO 3 = CAP 2 A CAP 3
+    setTimeout(() => {
+      const l2 = document.getElementById("loader2");
+      const t2 = document.getElementById("loader2-text");
+      l2.style.display = "flex";
+
+      escribirTexto(t2, "Pero este pensamiento... es recurrente...", 60);
+    }, 18000);
+
+    setTimeout(() => {
+      document.getElementById("loader2").style.display = "none";
+    }, 24000);
+
+    // LOADER 3: PANTALLAZO NEGRO 3 = CAP 2 A CAP 3
+    setTimeout(() => {
+      const l3 = document.getElementById("loader3");
+      const t3 = document.getElementById("loader3-text");
+      l3.style.display = "flex";
+
+      escribirTexto(t3, "No me necsitas; no soy suficiente...", 60);
+    }, 27000);
+
+    setTimeout(() => {
+      document.getElementById("loader3").style.display = "none";
+    }, 34000);
