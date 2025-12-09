@@ -93,6 +93,34 @@ body{
     animation: aparecer 20s ease;
   }
 
+   #frase5 {
+    animation: aparecer 25s ease;
+  }
+
+   #frase6 {
+    animation: aparecer 30s ease;
+   }
+
+   #frase7 {
+    animation: aparecer 35s ease;
+   }
+
+   #frase8 {
+    animation: aparecer 40s ease;
+   }
+
+   #frase9 {
+    animation: aparecer 45s ease;
+   }
+
+   #frase10 {
+    animation: aparecer 50s ease;
+   }
+
+   #frase11 {
+    animation: aparecer 55s ease;
+   }
+
 .contenido-centro2{
     margin-top: 25px;
     margin-left: 40px;
