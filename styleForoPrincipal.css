@@ -65,7 +65,7 @@ body{
     padding: 0.5px 10px 10px 10px;
     background-color: #000000;
     height: 30px;
-    width: 685px;
+    width: 1107px;
     color: #00ff00;
     margin-top: 25px; 
     margin-left: 40px; 
@@ -185,7 +185,7 @@ input {
 }
 
 .textIconos{
-  float: right;
+  float: left;
   align-items: left;
   padding-right: 10%;
 }
